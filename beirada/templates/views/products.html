@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}Products{% endblock %}
+{% block content %}
+<div class="container mx-auto">
+   
+    <section class="flex items-center justify-center my-20">
+        <h1 class="text-5xl">Django + Tailwind = ❤️</h1>
+    </section>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 m-2">
+        <c-card title="Samsung S24 Ultra" url="cotton">
+            <div class="flex flex-wrap justify-between items-center gap-2 my-1 ">
+                <h4 class="font-bold text-xl ">Ksh. 20000</h4>
+            </div>
+            ⭐⭐️⭐️⭐️⭐️
+        </c-card>
+        <c-card title="Samsung S24 Ultra" url="cotton">
+            <div class="flex flex-wrap justify-between items-center gap-2 my-1 ">
+                <h4 class="font-bold text-xl ">Ksh. 20000</h4>
+                <img alt="" class="bg-purple-200 w-3xs h-3xs justify-center rounded-lg" />
+            </div>
+            ⭐⭐️⭐️⭐️⭐️
+        </c-card>
+        <c-card title="Samsung S24 Ultra" url="cotton">
+            <div class="flex flex-wrap justify-between items-center gap-2 my-1 ">
+                <h4 class="font-bold text-xl ">Ksh. 20000</h4>
+                <img alt="" class="bg-purple-200 w-3xs h-3xs justify-center rounded-lg" />
+            </div>
+            ⭐⭐️⭐️⭐️⭐️
+        </c-card>
+        <c-card title="Samsung S24 Ultra" url="cotton">
+            <div class="flex flex-wrap justify-between items-center gap-2 my-1 ">
+                <h4 class="font-bold text-xl ">Ksh. 20000</h4>
+                <img alt="" class="bg-purple-200 w-3xs h-3xs justify-center rounded-lg" />
+            </div>
+            ⭐⭐️⭐️⭐️⭐️
+        </c-card>
+    </div>
+</div>
+{% endblock content %}
