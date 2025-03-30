@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'theme',
     'django_browser_reload',
     'django_cotton',
+    'compressor',
 ]
 
 TAILWIND_APP_NAME = 'theme'
@@ -56,6 +57,12 @@ INTERNAL_IPS = [
 ]
 
 NPM_BIN_PATH = "C:/Program Files/nodejs/npm.cmd"
+
+COMPRESS_ROOT = BASE_DIR / 'static'
+
+COMPRESS_ENABLED = True
+
+STATICFILES_FINDERS = ('compressor.finders.CompressorFinder',)
 
 MIDDLEWARE = [
     "django_browser_reload.middleware.BrowserReloadMiddleware",
